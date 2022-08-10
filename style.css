@@ -20,6 +20,8 @@ li {
 .wrapper {
    min-height: 100%;
    overflow: hidden;
+   max-width: 1440px;
+   margin: 0 auto;
 
    display: flex;
    flex-direction: column;
@@ -34,6 +36,7 @@ li {
    flex: 1 1 auto;
 }
 
+/*HEADER*/
 .header {
    max-height: 152px;
 }
@@ -103,6 +106,7 @@ li {
    padding: 0px 10px 0 0;
 }
 
+/*PREVIEW*/
 .preview {
    position: relative;
    background: url(./img/preview.svg) 0 1px no-repeat;
@@ -155,6 +159,8 @@ li {
    border-radius: 50%;
 }
 
+/*PROMOTION*/
+
 .promotion {
    height: 658px;
 }
@@ -205,23 +211,31 @@ li {
    color: #274C5B;
 }
 
+/*SECTION ABOUT US*/
 .about {
    background-color: #F9F8F8;
    min-height: 1006px;
-   max-width: 1440px;
-   margin: 0 auto;
 }
 
 .about__row {
    display: flex;
    padding: 130px 0;
+
 }
 
-.about__img {}
+.about__img {
+   flex: 0 0 675px;
+}
+
+.about__row img {
+   margin: 47px -30px 0 0;
+   width: 100%;
+}
 
 .about__column {
    display: flex;
    flex-direction: column;
+   padding: 0 0 0 30px
 }
 
 .title {
@@ -233,7 +247,7 @@ li {
 }
 
 .about__text {
-   padding: 22px 0 56px 0;
+   padding: 21px 0 58px 0;
 }
 
 .text {
@@ -242,26 +256,16 @@ li {
    font-weight: 400;
    font-size: 18px;
    line-height: 32px;
-   /* or 180% */
-
    letter-spacing: 0.36px;
-
    color: #525C60;
-}
-
-.about__list {
-   display: flex;
-   flex-direction: column;
 }
 
 .list-subtitle {
    display: flex;
-   flex-direction: row;
 }
 
 .list-box {
-   display: flex;
-   flex-direction: column;
+   padding: 0 0 0 20px;
 }
 
 .list-subtitle h4 {
@@ -271,19 +275,47 @@ li {
 }
 
 .about__list .text {
-   padding: 9px 0 30px 0;
+   padding: 10px 0 0 0;
 }
 
-.list-box {
-   padding: 0 20px;
-   max-height: 100px;
-   margin: 0 0 20px 0;
+.list-img {
+   flex: 0 0 100px;
+   margin: -45px 0 32px 0;
 }
 
-.list-img {}
+.list-img img {
+   width: 100%;
+}
 
-.about__button {}
 
-.button {}
 
-.about__submit {}
+.about__button {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   display: flex;
+   max-width: 199px;
+   min-height: 82px;
+   background: #274C5B;
+   border: 1px solid #274C5B;
+   border-radius: 16px;
+   margin: 20px 0 0 0;
+
+}
+
+.about__button button {
+   background-color: #274C5B;
+   border-radius: 16px;
+   font-size: 19px;
+   line-height: 32px;
+   letter-spacing: 0.6px;
+   text-transform: capitalize;
+   color: #FFFFFF;
+}
+
+.about__submit {
+   height: 38px;
+   width: 38px;
+   background-color: #335B6B;
+   border-radius: 50%;
+}
