@@ -319,3 +319,90 @@ li {
    background-color: #335B6B;
    border-radius: 50%;
 }
+
+/*ORGANIC*/
+
+.organic__headlines {
+   text-align: center;
+   margin: 120px 0 42px 0;
+}
+
+.sale-row {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.sale-block {
+   background-color: #F9F8F8;
+   border-radius: 30px;
+   margin: 0 20px 20px 0;
+}
+
+.sale-container {
+   padding: 30px;
+}
+
+.sale-button button {
+   font-family: 'Open Sans', sans-serif;
+   min-width: 118px;
+   min-height: 37px;
+   border-radius: 8px;
+   background-color: #274C5B;
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 27px;
+   letter-spacing: 0.36px;
+   color: #FFFFFF;
+}
+
+.sale-img {
+   width: 100%;
+}
+
+.sale-subtitle {
+   padding: 20px 0 11px 0;
+   border-bottom: #D4D4D4 1px solid;
+   font-size: 21px;
+   line-height: 35px;
+   letter-spacing: 0.36px;
+}
+
+
+.price-row {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 11px 0 0 0;
+}
+
+
+.last-price {
+   font-family: 'Open Sans', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 17px;
+   line-height: 32px;
+   letter-spacing: 0.36px;
+   text-decoration-line: line-through;
+   color: #B8B8B8;
+   padding: 0 20px 0 0;
+}
+
+.new-price {
+   font-family: 'Open Sans', sans-serif;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 32px;
+   letter-spacing: 0.36px;
+   margin: 0 90px 0 -10px;
+}
+
+.rating-row img {
+   padding: 0 2.5px 0 0;
+}
+
+.rating-row img:last-child {
+   padding: 0;
+}
