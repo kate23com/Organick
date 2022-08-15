@@ -431,12 +431,6 @@ li {
    text-align: center;
 }
 
-.testional__headlines {}
-
-.testimonial__label {}
-
-.testimonial__title {}
-
 .testimonial__img {
    padding: 60px 0 20px 0;
 }
@@ -446,7 +440,6 @@ li {
    height: 20px;
 }
 
-.rating-row {}
 
 .testimonial__text {
    padding: 34px 0 23px 0;
@@ -472,56 +465,44 @@ li {
 }
 
 .testimonial__advantages {
-   max-width: 878px;
-   margin: 0 auto;
    padding: 100px 0;
 }
 
 .testimonial__row {
    display: flex;
-   justify-content: space-around;
+   justify-content: center;
 }
 
 .testimonial__circle {
+
    box-sizing: border-box;
-}
-
-.border-green {
-   border-radius: 200px;
-   height: 200px;
-   width: 200px;
-   border: 6px solid #7EB693;
-   border-right: 4px solid #7EB693;
-   border-bottom: 4px solid #7EB693;
-}
-
-.border-white {
-   border-radius: 194px;
-   height: 190px;
-   width: 190px;
+   border-radius: 250px;
+   height: 250px;
+   width: 250px;
+   clear: both;
+   background: #F1F1F1;
    border: 6px solid #FFFFFF;
+   outline: 6px solid #7EB693;
+   margin: 0 26px 0 0;
 }
 
-.wrapper-grey {
+.testimonial__circle {
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   background-color: #F1F1F1;
-   border-radius: 180px;
-   height: 180px;
-   width: 180px;
 }
 
-.wrapper-grey p:first-child {
+.testimonial__circle p:first-child {
    font-weight: 700;
    font-size: 42px;
    line-height: 55px;
    letter-spacing: 0.36px;
 }
 
-.wrapper-grey p:last-child {
+.testimonial__circle p:last-child {
    font-family: 'Open Sans';
+   font-style: normal;
    font-weight: 700;
    font-size: 18px;
    line-height: 32px;
