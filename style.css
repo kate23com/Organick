@@ -131,7 +131,7 @@ li {
    letter-spacing: 0.36px;
 }
 
-.preview__button {
+.button-yellow {
    display: flex;
    justify-content: space-around;
    align-items: center;
@@ -142,7 +142,7 @@ li {
    border-radius: 16px;
 }
 
-.preview__button button {
+.button-yellow button {
    color: #274C5B;
    background-color: #EFD372;
    font-weight: 400;
@@ -152,7 +152,7 @@ li {
    text-transform: capitalize;
 }
 
-.preview__submit {
+.button-submit {
    width: 36px;
    height: 36px;
    background-color: #274C5B;
@@ -287,8 +287,6 @@ li {
    width: 100%;
 }
 
-
-
 .about__button {
    display: flex;
    justify-content: space-evenly;
@@ -330,7 +328,7 @@ li {
 .sale-row {
    display: flex;
    flex-wrap: wrap;
-   justify-content: center;
+   justify-content: space-between;
 }
 
 .sale-block {
@@ -368,14 +366,12 @@ li {
    letter-spacing: 0.36px;
 }
 
-
 .price-row {
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 11px 0 0 0;
 }
-
 
 .last-price {
    font-family: 'Open Sans', sans-serif;
@@ -440,7 +436,6 @@ li {
    height: 20px;
 }
 
-
 .testimonial__text {
    padding: 34px 0 23px 0;
 }
@@ -476,10 +471,9 @@ li {
 .testimonial__circle {
 
    box-sizing: border-box;
-   border-radius: 250px;
-   height: 250px;
-   width: 250px;
-   clear: both;
+   border-radius: 244px;
+   height: 244px;
+   width: 244px;
    background: #F1F1F1;
    border: 6px solid #FFFFFF;
    outline: 6px solid #7EB693;
@@ -508,3 +502,27 @@ li {
    line-height: 32px;
    letter-spacing: 0.36px;
 }
+
+/*OFFER*/
+
+.offer {
+   background-color: #274C5B;
+   min-height: 1060px;
+}
+
+.offer__columns {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   padding: 139px 0 48px 0;
+}
+
+.offer__title {
+   color: #FFFFFF;
+}
+
+.offer__button {
+   min-width: 267px;
+}
+
+/*ECO*/
