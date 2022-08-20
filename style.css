@@ -761,6 +761,56 @@ li {
 
 /*BASEMENT*/
 
+.basement {}
+
+.basement__row {
+   display: flex;
+   justify-content: center;
+}
+
+.basement__contact {}
+
+.basement__column {
+   display: flex;
+   flex-direction: column;
+}
+
+.column-contact {}
+
+.basement__title {
+   font-size: 30px;
+}
+
+.basement__subtitle {
+   font-size: 18px;
+}
+
+.subtitle {}
+
+.basement__text {}
+
+.text {}
+
+.column-logo {
+}
+
+.basement__logo {
+   display: flex;
+}
+
+.basement__img {}
+
+.basement__title {}
+
+.basement__social {
+   display: flex;
+}
+
+.basement__socisl-container {}
+
+.column-page {}
+
+.basement__link {}
 
 
 
