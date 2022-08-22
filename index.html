@@ -31,16 +31,26 @@
                   <div class="header__menu">
                      <nav class="header__list">
                         <ul>
-                           <li>Home</li>
-                           <li>About Us</li>
-                           <li>Shop</li>
-                           <li>Pages</li>
-                           <li>Contact Us</li>
+                           <a href="#">
+                              <li class="header__link active">Home</li>
+                           </a>
+                           <a href="#">
+                              <li class="header__link">About Us</li>
+                           </a>
+                           <a href="#">
+                              <li class="header__link">Shop</li>
+                           </a>
+                           <a href="#">
+                              <li class="header__link">Pages</li>
+                           </a>
+                           <a href="#">
+                              <li class="header__link">Contact Us</li>
+                           </a>
                         </ul>
                      </nav>
                   </div>
                   <div class="header__bascet">
-                     <button class="header__button buttons"></button>
+                     <button class="header__button"><img src="./img/header-bascet.png" alt=""></button>
                      <div>Cart</div>
                      <div>0</div>
                   </div>
@@ -55,7 +65,7 @@
                      <h1 class="preview__title">Welcome to the world of nature and organic.</h1>
                      <div class="preview__button button-yellow">
                         <button type="submit">Explore Now</button>
-                        <div class="preview__submit button-submit"></div>
+                        <div class="preview__submit button-submit"><img src="./img/all-vector.png" alt=""></div>
                      </div>
                   </div>
                </div>
@@ -111,9 +121,9 @@
                               </div>
                            </div>
                         </div>
-                        <div class="about__button button">
+                        <div class="about__button button-turquoise">
                            <button type="submit">Shop Now</button>
-                           <div class="about__submit"></div>
+                           <div class="about__submit button-submit"><img src="./img/all-vector.png" alt=""></div>
                         </div>
                      </div>
                   </div>
@@ -333,7 +343,7 @@
                      </div>
                      <div class="offer__button button-yellow">
                         <button type="submit">View All products</button>
-                        <div class="offer__submit button-submit"></div>
+                        <div class="offer__submit button-submit"><img src="./img/all-vector.png" alt=""></div>
                      </div>
                   </div>
                   <div class="offer__row sale-row">
@@ -464,49 +474,47 @@
                         <h3 class="news__label label">News</h3>
                         <h2 class="news__title title">Discover The recent content about organic products</h2>
                      </div>
-                     <div class="news__button button-yellow">
+                     <div class="news__button button-turquoise">
                         <button type="submit">More News</button>
-                        <div class="news__submit button-submit"></div>
+                        <div class="news__submit button-submit"><img src="./img/all-vector.png" alt=""></div>
                      </div>
                   </div>
-                  <div class="news__block">
-                     <div class="news__block news">
-                        <div class="news__row">
-                           <div class="news__columns">
-                              <div class="news__block block-first">
-                                 <div class="news__block text-block">
-                                    <div class="news__autor">
-                                       <img src="./img/news-person.png" alt="">
-                                       <span>Kristina Castle</span>
-                                    </div>
-                                    <div class="news__item">
-                                       <h3 class="news__subtitle subtitle">Everything You Need to Know About Organic
-                                       </h3>
-                                       <p class="news__text text">Organic farming is the only way that you still can
-                                          experience the real world.</p>
-                                    </div>
-                                    <div class="news__link">
-                                       <a>View More</a>
-                                       <img src="./img/news-vector.svg" alt="">
-                                    </div>
+                  <div class="news__blocks">
+                     <div class="news__row">
+                        <div class="news__column">
+                           <div class="news__block block-first">
+                              <div class="news__block text-block">
+                                 <div class="news__autor">
+                                    <img src="./img/news-person.png" alt="">
+                                    <span>Kristina Castle</span>
+                                 </div>
+                                 <div class="news__item">
+                                    <h3 class="news__subtitle subtitle">Everything You Need to Know About Organic
+                                    </h3>
+                                    <p class="news__text text">Organic farming is the only way that you still can
+                                       experience the real world.</p>
+                                 </div>
+                                 <div class="news__link">
+                                    <a>View More</a>
+                                    <img src="./img/news-vector.svg" alt="">
                                  </div>
                               </div>
-                              <div class="news__block block-second">
-                                 <div class="news__block text-block">
-                                    <div class="news__autor">
-                                       <img src="./img/news-person.png" alt="">
-                                       <p>Alex Louis</p>
-                                    </div>
-                                    <div class="news__item">
-                                       <h3 class="news__subtitle subtitle">Organic Fruits: Surprising Benefits and Facts
-                                       </h3>
-                                       <p class="news__text text">The world of nature has grown on the principles of
-                                          health, ecology, and care.</p>
-                                    </div>
-                                    <div class="news__link">
-                                       <a>View More</a>
-                                       <img src="./img/news-vector.svg" alt="">
-                                    </div>
+                           </div>
+                           <div class="news__block block-second">
+                              <div class="news__block text-block">
+                                 <div class="news__autor">
+                                    <img src="./img/news-person.png" alt="">
+                                    <p>Alex Louis</p>
+                                 </div>
+                                 <div class="news__item">
+                                    <h3 class="news__subtitle subtitle">Organic Fruits: Surprising Benefits and Facts
+                                    </h3>
+                                    <p class="news__text text">The world of nature has grown on the principles of
+                                       health, ecology, and care.</p>
+                                 </div>
+                                 <div class="news__link">
+                                    <a>View More</a>
+                                    <img src="./img/news-vector.svg" alt="">
                                  </div>
                               </div>
                            </div>
@@ -528,9 +536,9 @@
                                  class="subscription__text text">
                            </form>
                         </div>
-                        <div class="subscription__button button-yellow">
+                        <div class="subscription__button button-turquoise">
                            <button type="submit">Subscribe</button>
-                           <div class="subscription__submit button-submit"></div>
+                           <div class="subscription__submit button-submit"><img src="./img/all-vector.png" alt=""></div>
                         </div>
                      </div>
                   </div>
