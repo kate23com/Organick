@@ -79,7 +79,7 @@ li {
    padding: 0 40px 0 0;
 }
 
-.header__list li:first-child {
+.header__list .active {
    color: #7EB693;
 }
 
@@ -136,7 +136,7 @@ li {
    justify-content: space-around;
    align-items: center;
    max-width: 219px;
-   height: 82px;
+   min-height: 82px;
    background: #EFD372;
    border: 1px solid #EFD372;
    border-radius: 16px;
@@ -157,6 +157,14 @@ li {
    height: 36px;
    background-color: #274C5B;
    border-radius: 50%;
+   position: relative;
+}
+
+
+.button-submit img {
+   position: absolute;
+   top: 30%;
+   left: 21%;
 }
 
 /*PROMOTION*/
@@ -225,11 +233,7 @@ li {
 
 .about__img {
    flex: 0 0 675px;
-}
-
-.about__row img {
-   margin: 47px -30px 0 0;
-   width: 100%;
+   margin: 47px 0;
 }
 
 .about__column {
@@ -274,6 +278,10 @@ li {
    letter-spacing: 0.36px;
 }
 
+.about__list img {
+   padding: 47px 0 0 0;
+}
+
 .about__list .text {
    padding: 10px 0 0 0;
 }
@@ -287,21 +295,23 @@ li {
    width: 100%;
 }
 
-.about__button {
+.button-turquoise {
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-around;
    align-items: center;
-   display: flex;
    max-width: 199px;
    min-height: 82px;
    background: #274C5B;
    border: 1px solid #274C5B;
    border-radius: 16px;
-   margin: 20px 0 0 0;
 
 }
 
-.about__button button {
+.about__button {
+   margin: 20px 0 0 0;
+}
+
+.button-turquoise button {
    background-color: #274C5B;
    border-radius: 16px;
    font-size: 19px;
@@ -309,13 +319,6 @@ li {
    letter-spacing: 0.6px;
    text-transform: capitalize;
    color: #FFFFFF;
-}
-
-.about__submit {
-   height: 38px;
-   width: 38px;
-   background-color: #335B6B;
-   border-radius: 50%;
 }
 
 /*ORGANIC*/
@@ -515,6 +518,9 @@ li {
    display: flex;
    justify-content: space-between;
    align-items: flex-end;
+}
+
+.offer .columns-heading {
    padding: 139px 0 48px 0;
 }
 
@@ -542,7 +548,6 @@ li {
    max-height: 623px;
    background-color: #FFFFFF;
    border-radius: 30px 0px 0px 30px;
-
 }
 
 .eco__container {
@@ -560,7 +565,6 @@ li {
 .eco__list h4:first-child {
    padding: 0;
 }
-
 
 .subtitle {
    font-weight: 700;
@@ -589,6 +593,7 @@ li {
    display: flex;
    justify-content: center;
    align-items: center;
+   flex: 0 0 460px;
 }
 
 .food-juice {
@@ -617,30 +622,16 @@ li {
 
 /*NEWS*/
 
-.news {}
-
-.container {}
-
-.news__columns .columns-heading {
-   padding: 130px 0 127px 0;
+.news {
+   height: 1126px;
 }
 
-.columns-heading {}
-
-.news__headlings {}
-
-.news__label {}
-
-.label {}
-
-.news__title {}
-
-.title {}
-
+.news__columns {
+   padding: 130px 0 0 0;
+}
 
 .news__button {
    min-width: 210px;
-   Height: 82px;
    background: #FFFFFF;
    border: 1px solid #274C5B;
    border-radius: 16px;
@@ -648,11 +639,226 @@ li {
 
 .news__button button {
    background-color: #FFFFFF;
+   color: #274C5B;
 }
 
-.news__submit {}
+.news__blocks {
+   margin: 127px 0 0 0;
+}
 
-.button-submit {}
+.news__column {
+   display: flex;
+   justify-content: space-between;
+}
+
+.news__block {
+   flex: 0 0 670px;
+}
+
+.block-first {
+   position: relative;
+   background: url(./img/news-salad.png) no-repeat;
+   height: 515px;
+   border-radius: 30px;
+}
+
+.block-second {
+   position: relative;
+   background: url(./img/news-tomato.png) no-repeat;
+   height: 515px;
+   border-radius: 30px;
+}
+
+.text-block {
+   position: absolute;
+   max-width: 610px;
+   height: 337px;
+   background-color: #ffffff;
+   box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.14);
+   border-radius: 30px;
+   padding: 50px;
+   top: 250px;
+   left: 30px;
+}
+
+.news__autor {
+   display: flex;
+   align-items: flex-end;
+   margin: 0 0 16px 0;
+}
+
+.news__autor img {
+   margin: 0 10px 0 0;
+}
+
+.news__item h3 {
+   padding: 0 0 38px 0;
+}
+
+.news__text {
+   padding: 0 0 22px 0;
+}
+
+.news__link {
+   display: flex;
+   align-items: center;
+}
+
+.news__link a {
+   font-size: 20px;
+   line-height: 28px;
+   padding: 0 10px 0 0;
+}
+
+/*SUBSCRIPTION*/
+
+.subscription__container {
+   height: 320px;
+   background: url(./img/subscription.png) no-repeat;
+}
+
+.subscription__row {
+   padding: 100px 70px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.subscription__title {
+   color: #FFFFFF;
+   padding: 0 350px 0 0;
+}
+
+.subscription__form input {
+   min-width: 350px;
+   height: 82px;
+   border-radius: 16px;
+   box-sizing: border-box;
+}
+
+.subscription__form input::placeholder {
+   padding: 26px 101px 27px 30px;
+   font-family: 'Open Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 29px;
+   letter-spacing: 0.36px;
+   color: #525C60;
+}
+
+.subscription__button {
+   width: 197px;
+   height: 82px;
+   background: #274C5B;
+   border: 1px solid #274C5B;
+   border-radius: 16px;
+}
+
+.subscription__button button {
+   background: #274C5B;
+   color: #FFFFFF;
+}
+
+.button-submit {
+   background-color: #335B6B;
+}
+
+/*BASEMENT*/
+
+.basement {
+   margin: 167px 102px;
+}
+
+.basement__row {
+   display: flex;
+}
+
+.basement__column {
+   display: flex;
+   flex-direction: column;
+}
+
+.column-contact {
+   border-right: 1px solid #D5D5D5;
+   padding: 0 19px 0 0;
+   text-align: right;
+}
+
+.column-contact .basement__title {
+   font-size: 30px;
+   padding: 0 0 34px 0;
+}
+
+.basement__subtitle {
+   font-size: 18px;
+}
+
+.basement__subheading {
+   font-size: 18px;
+   padding: 0 0 38px 0;
+}
+
+.basement__subheading:last-child {
+   padding: 0;
+}
+
+.column-logo {
+   max-width: 670px;
+   padding: 0 52px;
+   text-align: center;
+}
+
+.basement__logo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0 0 50px 0;
+}
+
+.basement__img {
+   padding: 0 10px 0 0;
+}
+
+.basement__social {
+   display: flex;
+   justify-content: center;
+}
+
+.basement__social-container {
+   min-width: 60px;
+   min-height: 60px;
+   background-color: #EFF6F1;
+   border-radius: 100px;
+   margin: 60px 20px 0 0;
+}
+
+.basement__social-container:last-child {
+   margin: 60px 0 0 0;
+}
+
+.basement__social-container img {
+   padding: 21px;
+}
+
+.column-page {
+   border-left: 1px solid #D5D5D5;
+   padding: 0 0 0 19px;
+}
+
+.column-page .basement__title {
+   font-size: 30px;
+   padding: 0 0 20px 0;
+}
+
+.basement__link {
+   color: #525C60;
+}
+
+.column-page p {
+   padding: 24px 0 0 0;
+}
+
 
 /*FOOTER*/
 
@@ -662,5 +868,4 @@ li {
    justify-content: center;
    height: 81px;
    border-top: 1px solid #D5D5D5;
-
 }
